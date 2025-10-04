@@ -1,0 +1,5 @@
+{
+  "name": "capi",
+  "compatibility_date": "2025-10-04",
+  "main": ".vercel/output/static/_worker.js"
+}
