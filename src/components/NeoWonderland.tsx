@@ -121,7 +121,7 @@ export function NeoWonderland() {
         >
           <div className="inline-block bg-gradient-to-r from-[#A44DD8]/20 to-[#3BD16F]/20 backdrop-blur-sm border border-[#FFD86B]/30 rounded-2xl p-8">
             <h3 className="text-[#FFD86B] mb-4" style={{ fontFamily: "'Caveat', cursive", fontSize: "1.5rem" }}>
-              "Culture is the transformation of imagination into reality&quot;
+              &quot;Culture is the transformation of imagination into reality&quot;
             </h3>
             <p className="text-white/80" style={{ fontFamily: "'Inter', sans-serif" }}>
               Join the renaissance of digital culture in Neo Wonderland
