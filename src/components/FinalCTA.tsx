@@ -195,7 +195,7 @@ export function FinalCTA() {
               className="text-[#FFD86B] mb-4"
               style={{ fontFamily: "'Caveat', cursive", fontSize: "1.5rem" }}
             >
-              "Every butterfly was once a caterpillar that refused to give up"
+              &quot;Every butterfly was once a caterpillar that refused to give up&quot;
             </h4>
             <p 
               className="text-white/80"

@@ -31,7 +31,6 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <script src="https://cdn.tailwindcss.com"></script>
         <meta name="theme-color" content="#0D0C2B" />
       </head>
       <body suppressHydrationWarning>

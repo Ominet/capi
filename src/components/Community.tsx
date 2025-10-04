@@ -67,7 +67,7 @@ export function Community() {
             className="text-white text-lg max-w-3xl mx-auto leading-relaxed mb-8"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            Caterpi's silk weaves us together. Enter the community.
+            Caterpi&apos;s silk weaves us together. Enter the community.
           </p>
         </motion.div>
 
@@ -256,7 +256,7 @@ export function Community() {
               className="text-[#FFD86B] mb-4"
               style={{ fontFamily: "'Caveat', cursive", fontSize: "1.5rem" }}
             >
-              "Together we weave the future of digital culture"
+              &quot;Together we weave the future of digital culture&quot;
             </h4>
             <p 
               className="text-white/80"

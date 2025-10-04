@@ -99,6 +99,7 @@ export function EcosystemFlywheel() {
                 top: `calc(50% + ${step.position.y}px - 3rem)`,
                 borderColor: step.color,
                 backgroundColor: `${step.color}20`,
+                animationDuration: `${3 + index * 0.5}s`, animationRepeat: "infinite"
               }}
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -106,7 +107,6 @@ export function EcosystemFlywheel() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.1 }}
               animate={{ y: [0, -10, 0] }}
-              style={{ animationDuration: `${3 + index * 0.5}s`, animationRepeat: "infinite" }}
             >
               <div className="text-2xl mb-1">{step.icon}</div>
               <div 
@@ -173,7 +173,7 @@ export function EcosystemFlywheel() {
               className="text-[#FFD86B] mb-4"
               style={{ fontFamily: "'Caveat', cursive", fontSize: "1.5rem" }}
             >
-              "The silk of Caterpi weaves all elements together"
+              &quot;The silk of Caterpi weaves all elements together&quot;
             </h4>
             <p 
               className="text-white/80"

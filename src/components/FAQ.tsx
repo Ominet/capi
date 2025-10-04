@@ -197,7 +197,7 @@ export function FAQ() {
               className="text-[#FFD86B] mb-4"
               style={{ fontFamily: "'Caveat', cursive", fontSize: "1.5rem" }}
             >
-              "Questions are the beginning of wisdom"
+              &quot;Questions are the beginning of wisdom&quot;
             </h4>
             <p 
               className="text-white/80 mb-4"

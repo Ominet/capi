@@ -226,7 +226,7 @@ export function Footer() {
               fontSize: "1.2rem"
             }}
           >
-            "In the cocoon of imagination, we weave the threads of tomorrow"
+            &quot;In the cocoon of imagination, we weave the threads of tomorrow&quot;
           </p>
         </motion.div>
       </div>

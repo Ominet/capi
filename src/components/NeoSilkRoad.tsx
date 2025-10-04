@@ -207,7 +207,7 @@ export function NeoSilkRoad() {
               className="text-[#FFD86B] mb-4"
               style={{ fontFamily: "'Caveat', cursive", fontSize: "1.5rem" }}
             >
-              "Where imagination meets commerce"
+              &quot;Where imagination meets commerce&quot;
             </h4>
             <p 
               className="text-white/80"

@@ -113,7 +113,7 @@ export function Roadmap() {
             className="text-white text-lg max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            The transformation journey from egg to caterpillar to butterfly — mirroring Caterpi's evolution in the digital realm.
+            The transformation journey from egg to caterpillar to butterfly — mirroring Caterpi&apos;s evolution in the digital realm.
           </p>
         </motion.div>
 
@@ -260,7 +260,7 @@ export function Roadmap() {
               className="text-[#FFD86B] mb-4"
               style={{ fontFamily: "'Caveat', cursive", fontSize: "1.5rem" }}
             >
-              "Every great journey begins with a single step"
+              &quot;Every great journey begins with a single step&quot;
             </h4>
             <p 
               className="text-white/80"
