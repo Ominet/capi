@@ -29,7 +29,7 @@ const nextConfig = {
   optimizeFonts: true,
   
   // Configuration Webpack pour Motion (ex-Framer Motion) - garde en fallback
-  webpack: (config) => {
+  webpack: (config: any) => {
     config.resolve.alias = {
       ...config.resolve.alias,
       'framer-motion': 'motion/react',
