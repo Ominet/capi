@@ -99,7 +99,7 @@ export function EcosystemFlywheel() {
                 top: `calc(50% + ${step.position.y}px - 3rem)`,
                 borderColor: step.color,
                 backgroundColor: `${step.color}20`,
-                animationDuration: `${3 + index * 0.5}s`, animationRepeat: "infinite"
+                animationDuration: `${3 + index * 0.5}s`
               }}
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
