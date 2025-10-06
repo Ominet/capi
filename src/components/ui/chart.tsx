@@ -20,7 +20,9 @@ export type ChartConfig = {
 type ChartContextProps = {
   config: ChartConfig
 }
-
+type CustomTooltipProps<VT extends string | number, NT extends string> = TooltipProps<VT, NT> & {
+  payload?: Payload<VT, NT>[]; // 👈 on ajoute explicitement payload
+}
 const ChartContext = React.createContext<ChartContextProps | null>(null)
 
 function useChart() {
@@ -103,7 +105,7 @@ const ChartTooltip = RechartsPrimitive.Tooltip
 
 const ChartTooltipContent = React.forwardRef<
   HTMLDivElement,
-  TooltipProps<string | number, string> & {
+  CustomTooltipProps<string | number, string> & {
     className?: string
     hideLabel?: boolean
     hideIndicator?: boolean
