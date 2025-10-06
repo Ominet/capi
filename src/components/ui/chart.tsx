@@ -2,7 +2,9 @@
 
 import * as React from "react"
 import * as RechartsPrimitive from "recharts"
-import { cn } from "./utils";
+import { TooltipProps } from "recharts"
+
+import { cn } from "./utils"
 
 const THEMES = { light: "", dark: ".dark" } as const
 
@@ -99,16 +101,19 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip
 
+// ✅ On utilise TooltipProps pour avoir active, payload, etc.
 const ChartTooltipContent = React.forwardRef<
   HTMLDivElement,
-  React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
-    React.ComponentProps<"div"> & {
-      hideLabel?: boolean
-      hideIndicator?: boolean
-      indicator?: "line" | "dot" | "dashed"
-      nameKey?: string
-      labelKey?: string
-    }
+  TooltipProps<any, any> & {
+    className?: string
+    hideLabel?: boolean
+    hideIndicator?: boolean
+    indicator?: "line" | "dot" | "dashed"
+    nameKey?: string
+    labelKey?: string
+    labelClassName?: string
+    color?: string
+  }
 >(
   (
     {
@@ -153,9 +158,7 @@ const ChartTooltipContent = React.forwardRef<
         )
       }
 
-      if (!value) {
-        return null
-      }
+      if (!value) return null
 
       return <div className={cn("font-medium", labelClassName)}>{value}</div>
     }, [
@@ -208,11 +211,14 @@ const ChartTooltipContent = React.forwardRef<
                             "shrink-0 rounded-[2px]",
                             indicator === "dot" && "h-2.5 w-2.5",
                             indicator === "line" && "w-1",
-                            indicator === "dashed" && "w-0 border-[1.5px] border-dashed bg-transparent"
+                            indicator === "dashed" &&
+                              "w-0 border-[1.5px] border-dashed bg-transparent"
                           )}
                           style={{
-                            backgroundColor: indicator !== "dashed" ? indicatorColor : undefined,
-                            borderColor: indicator === "dashed" ? indicatorColor : undefined,
+                            backgroundColor:
+                              indicator !== "dashed" ? indicatorColor : undefined,
+                            borderColor:
+                              indicator === "dashed" ? indicatorColor : undefined,
                           }}
                         />
                       )
@@ -230,7 +236,9 @@ const ChartTooltipContent = React.forwardRef<
                       </div>
                       {item.value && (
                         <span className="font-mono font-medium tabular-nums text-foreground">
-                          {typeof item.value === "number" ? item.value.toLocaleString() : item.value}
+                          {typeof item.value === "number"
+                            ? item.value.toLocaleString()
+                            : item.value}
                         </span>
                       )}
                     </div>
@@ -280,10 +288,7 @@ const ChartLegendContent = React.forwardRef<
           const itemConfig = config[key as keyof typeof config]
 
           return (
-            <div
-              key={item.value}
-              className="flex items-center gap-1.5"
-            >
+            <div key={item.value} className="flex items-center gap-1.5">
               {itemConfig?.icon && !hideIcon ? (
                 <itemConfig.icon />
               ) : (
