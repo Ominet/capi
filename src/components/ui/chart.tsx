@@ -68,7 +68,7 @@ ChartContainer.displayName = "Chart"
 
 const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   const colorConfig = Object.entries(config).filter(
-    ([_, itemConfig]) => itemConfig.theme || itemConfig.color
+    ([, itemConfig]) => itemConfig.theme || itemConfig.color
   )
 
   if (!colorConfig.length) {
@@ -101,10 +101,9 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip
 
-// ✅ On utilise TooltipProps pour avoir active, payload, etc.
 const ChartTooltipContent = React.forwardRef<
   HTMLDivElement,
-  TooltipProps<any, any> & {
+  TooltipProps<string | number, string> & {
     className?: string
     hideLabel?: boolean
     hideIndicator?: boolean
