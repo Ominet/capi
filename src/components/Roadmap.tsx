@@ -113,7 +113,7 @@ export function Roadmap() {
             className="text-white text-lg max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            The transformation journey from egg to caterpillar to butterfly — mirroring Caterpi&apos;s evolution in the digital realm.
+            The transformation journey from egg to caterpillar to butterfly — mirroring Caterpi's evolution in the digital realm.
           </p>
         </motion.div>
 
@@ -165,7 +165,8 @@ export function Roadmap() {
         {/* Timeline */}
         <div className="relative">
           {/* Central Line */}
-          <div className="absolute left-1/2 w-1 h-full bg-gradient-to-b from-[#FFD86B] to-[#A44DD8] opacity-30" style={{ marginLeft: '-0.125rem' }} />
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#FFD86B] to-[#A44DD8] opacity-30" />
+
           {roadmapSteps.map((step, index) => (
             <motion.div
               key={index}
@@ -227,7 +228,6 @@ export function Roadmap() {
                 style={{
                   borderColor: step.color,
                   backgroundColor: `${step.color}20`,
-                  marginLeft: '-2rem',
                 }}
                 whileHover={{ scale: 1.2, rotate: 10 }}
                 animate={{ rotate: [0, 5, 0, -5, 0] }}
@@ -260,7 +260,7 @@ export function Roadmap() {
               className="text-[#FFD86B] mb-4"
               style={{ fontFamily: "'Caveat', cursive", fontSize: "1.5rem" }}
             >
-              &quot;Every great journey begins with a single step&quot;
+              "Every great journey begins with a single step"
             </h4>
             <p 
               className="text-white/80"
