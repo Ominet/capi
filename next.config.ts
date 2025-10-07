@@ -19,8 +19,8 @@ const nextConfig = {
   },
   
   // Configuration pour le build statique (optionnel)
-  output: 'export',
-  trailingSlash: true,
+  // output: 'export',
+  // trailingSlash: true,
   
   // Compression et optimisations
   compress: true,
