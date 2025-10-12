@@ -21,7 +21,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1687780670876-9e083971adea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFycnklMjBuaWdodCUyMHdvbmRlcmxhbmQlMjBtYWdpY2FsfGVufDF8fHx8MTc1OTI0MDc5NHww&ixlib=rb-4.1.0&q=80&w=1080"
+          src="/images/01.gif"
           alt="Starry Wonderland"
           className="w-full h-full object-cover opacity-30"
         />
@@ -42,7 +42,7 @@ export function Hero() {
         }}
       >
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1677126128022-87285201c975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXRlcnBpbGxhciUyMG15c3RpY2FsJTIwZmFudGFzeXxlbnwxfHx8fDE3NTkyNDA3OTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+          src="/images/03.gif"
           alt="Mystical Caterpi"
           className="w-32 h-32 rounded-full opacity-80"
         />
@@ -95,7 +95,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          1,000 Emblems + 10,000 NFTs on Ethereum. The gateway to Neo Wonderland & the Neo Silk Road.
+          1,500 Emblems + 10,000 NFTs on Ethereum. The gateway to Neo Wonderland & the Neo Silk Road.
         </motion.p>
         
         <motion.div

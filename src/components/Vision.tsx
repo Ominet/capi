@@ -9,7 +9,8 @@ export function Vision() {
       description: "Exquisite digital art that transcends boundaries"
     },
     {
-      icon: "🪙",
+      icon: "/images/5.png",
+      isImage: true,
       label: "$CPI",
       description: "The meme coin with wings and utility"
     },
@@ -40,7 +41,17 @@ export function Vision() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.05, y: -10 }}
             >
-              <div className="text-6xl mb-4">{item.icon}</div>
+            <div className="flex justify-center items-center mb-4 h-20">
+              {item.isImage ? (
+                <img
+                  src={item.icon}
+                  alt={item.label}
+                  className="w-16 h-16 object-contain"
+                />
+              ) : (
+                <div className="text-6xl mb-4">{item.icon}</div>
+              )}
+            </div>
               <h3 className="text-[#FFD86B] mb-3" style={{ fontFamily: "'Cinzel Decorative', serif" }}>
                 {item.label}
               </h3>
@@ -62,7 +73,7 @@ export function Vision() {
             className="text-white text-lg max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            Caterpi is art, meme coin, and ecosystem. He is wise, well dressed from shoes to hat — in ways you can imagine, and in others you cannot.
+            Caterpi is art, a meme, an ecosystem of wonder. He speaks in riddles and dresses in dreams <br/>—<br/> wise as time, playful as light, stitched from silk and the logic of impossible moons.
           </p>
         </motion.div>
       </div>
