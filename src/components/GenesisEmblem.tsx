@@ -7,22 +7,22 @@ export function GenesisEmblem() {
   const emblems = [
     {
       id: 1,
-      name: 'CaterLopp #1',
+      name: 'CaterLoop #1',
       rarity:'Common'
     },
     {
       id: 2,
-      name: 'CaterLopp #2',
+      name: 'CaterLoop #2',
       rarity:'Uncommon'
     },
     {
       id: 3,
-      name: 'CaterLopp #3',
+      name: 'CaterLoop #3',
       rarity:'Rare'
     },
     {
       id: 4,
-      name: 'CaterLopp #4',
+      name: 'CaterLoop #4',
       rarity:'Legendary'
     },
     {

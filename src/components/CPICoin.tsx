@@ -46,49 +46,21 @@ rewarding those who create, hold, and dream, the builders of a new cultural econ
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             className="relative flex justify-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
           >
-            <motion.div
-              className="relative"
-              animate={{ rotateY: 360 }}
-              transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-              style={{ transformStyle: "preserve-3d" }}
-            >
-              <div className="relative w-80 h-80">
+            
+              <div className="relative w-full h-full">
                 {/* Coin Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD86B] to-[#3BD16F] rounded-full blur-xl opacity-30 animate-pulse" />
+                <div className=" inset-0  blur-xl " />
                 
                 {/* Main Coin */}
-                <div className="relative w-full h-full bg-gradient-to-br from-[#FFD86B] to-[#E84343] rounded-full border-8 border-[#FFD86B]/50 shadow-2xl flex items-center justify-center">
+                <div className="relative w-full h-full  flex items-center justify-center">
                   <ImageWithFallback
                     src="/images/02.gif"
                     alt="CPI Coin"
-                    className="w-full h-full rounded-full object-cover opacity-80"
+                    className="w-full h-full object-cover"
                   />
                   
-                  {/* Coin Text */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div 
-                        className="text-[#0D0C2B] mb-2"
-                        style={{ 
-                          fontFamily: "'Cinzel Decorative', serif",
-                          fontSize: "2rem"
-                        }}
-                      >
-                        $CPI
-                      </div>
-                      <div 
-                        className="text-[#0D0C2B] text-sm"
-                        style={{ fontFamily: "'Inter', sans-serif" }}
-                      >
-                        CATERPI
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
 
                 {/* Floating Particles */}
@@ -113,7 +85,6 @@ rewarding those who create, hold, and dream, the builders of a new cultural econ
                   />
                 ))}
               </div>
-            </motion.div>
           </motion.div>
 
           <motion.div
