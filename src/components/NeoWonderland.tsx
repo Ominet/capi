@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export function NeoWonderland() {
   const products = [
-    { name: "Digital Stories", icon: "📚", color: "#A44DD8" },
+    { name: "Branded Products & Toys", icon: "📚", color: "#A44DD8" },
     { name: "Cartoons", icon: "🎬", color: "#3BD16F" },
     { name: "Games", icon: "🎮", color: "#E84343" },
     { name: "Collectibles", icon: "💎", color: "#FFD86B" }
@@ -40,7 +40,7 @@ export function NeoWonderland() {
             className="text-white text-lg max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            Neo Wonderland is where Caterpi becomes culture — digital stories, cartoons, games, and branded digital collectibles.
+            Neo Wonderland is where Caterpi becomes culture — Products & stories, cartoons, games, and branded digital collectibles.
           </p>
         </motion.div>
 
@@ -54,7 +54,7 @@ export function NeoWonderland() {
           >
             <div className="relative">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1704730777582-dd8bef55a8c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwYXJ0JTIwZ2FsbGVyeSUyMG5lb258ZW58MXx8fHwxNzU5MjQwNzk0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/1.png"
                 alt="Neo Wonderland Boutique"
                 className="w-full rounded-2xl shadow-2xl"
               />

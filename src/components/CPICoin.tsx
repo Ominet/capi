@@ -4,10 +4,10 @@ import { motion } from "motion/react";
 
 export function CPICoin() {
   const utilities = [
-    { name: "Contests", icon: "🏆", description: "Participate in community challenges" },
-    { name: "Memes", icon: "😂", description: "Create and share viral content" },
-    { name: "Digital Goods", icon: "🛍️", description: "Purchase exclusive items" },
-    { name: "Marketplace", icon: "🏪", description: "Trade on Neo Silk Road" }
+    { name: "Contests", icon: "🏆", description: "Create, compete, and earn your share in $CPI" },
+    { name: "Memes", icon: "😂", description: "Turn creativity into culture, and culture into value" },
+    { name: "Digital Goods", icon: "🛍️", description: "Collect exclusive art, objects, and wonders from the ecosystem" },
+    { name: "Marketplace", icon: "🏪", description: "Every trade feeds liquidity and strengthens the community" }
   ];
 
   return (
@@ -31,13 +31,15 @@ export function CPICoin() {
               fontSize: "clamp(1.8rem, 4vw, 2.5rem)"
             }}
           >
-            $CPI Coin
+            $CPI — The Meme Coin that Shares Value
           </h2>
           <p 
             className="text-white text-lg max-w-3xl mx-auto leading-relaxed mb-8"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            $CPI is the meme coin with wings. Utility: contests, memes, digital goods, marketplace transactions.
+            $CPI turns imagination into shared prosperity.
+Born in a cocoon of dreams, Caterpi grows through Neo Wonderland and journeys toward the Neo Silk Road —
+rewarding those who create, hold, and dream, the builders of a new cultural economy.
           </p>
         </motion.div>
 
@@ -62,7 +64,7 @@ export function CPICoin() {
                 {/* Main Coin */}
                 <div className="relative w-full h-full bg-gradient-to-br from-[#FFD86B] to-[#E84343] rounded-full border-8 border-[#FFD86B]/50 shadow-2xl flex items-center justify-center">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1634038971836-3ef8d473ccdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBjb2luJTIwY3J5cHRvY3VycmVuY3l8ZW58MXx8fHwxNzU5MjQwNzk1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="/images/02.gif"
                     alt="CPI Coin"
                     className="w-full h-full rounded-full object-cover opacity-80"
                   />
@@ -170,13 +172,15 @@ export function CPICoin() {
                 className="text-[#3BD16F] mb-2"
                 style={{ fontFamily: "'Caveat', cursive", fontSize: "1.3rem" }}
               >
-                The Meme Coin with Wings
+                🦋 The Heartbeat of Neo Caterpi
               </h4>
               <p 
                 className="text-white/80"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
-                More than just a token - $CPI powers the entire Neo Wonderland ecosystem with real utility and community value.
+                More than a token — $CPI is a living share of the dream.
+As Wonderland grows, liquidity flows, and every holder thrives.
+Create. Earn. Repeat.
               </p>
             </motion.div>
           </motion.div>

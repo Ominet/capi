@@ -3,15 +3,53 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { motion } from "motion/react";
 
 export function GenesisEmblem() {
-  const emblems = Array.from({ length: 12 }, (_, i) => ({
-    id: i + 1,
-    rarity: i < 2 ? 'Legendary' : i < 5 ? 'Epic' : i < 8 ? 'Rare' : 'Common'
-  }));
-
+  
+  const emblems = [
+    {
+      id: 1,
+      name: 'CaterLopp #1',
+      rarity:'Common'
+    },
+    {
+      id: 2,
+      name: 'CaterLopp #2',
+      rarity:'Uncommon'
+    },
+    {
+      id: 3,
+      name: 'CaterLopp #3',
+      rarity:'Rare'
+    },
+    {
+      id: 4,
+      name: 'CaterLopp #4',
+      rarity:'Legendary'
+    },
+    {
+      id: 5,
+      name: 'Caterpi #1',
+      rarity:'Common'
+    },
+    {
+      id: 6,
+      name: 'Caterpi #2',
+      rarity:'Uncommon'
+    },
+    {
+      id: 7,
+      name: 'Caterpi #3',
+      rarity:'Rare'
+    },
+    {
+      id: 8,
+      name: 'Caterpi #4',
+      rarity:'Legendary'
+    }
+  ]
   const getRarityColor = (rarity: string) => {
     switch (rarity) {
       case 'Legendary': return 'from-[#FFD86B] to-[#E84343]';
-      case 'Epic': return 'from-[#A44DD8] to-[#E84343]';
+      case 'Uncommon': return 'from-[#A44DD8] to-[#E84343]';
       case 'Rare': return 'from-[#3BD16F] to-[#A44DD8]';
       default: return 'from-[#3BD16F] to-[#FFD86B]';
     }
@@ -27,6 +65,16 @@ export function GenesisEmblem() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 justify-center flex">
+            <ImageWithFallback
+                    src="/images/8.jpg" alt={`Genesis Emblem 8`}
+                    className="w-full aspect-square object-cover rounded-lg mb-3 w-72 h-72 object-contain"
+                  />
+            <ImageWithFallback
+                    src="/images/0.png" alt={`Genesis Emblem 0`}
+                    className="w-full aspect-square object-cover rounded-lg mb-3 w-72 h-72 object-contain"
+                  />
+        </div>
           <h2 
             className="text-[#FFD86B] mb-6"
             style={{ 
@@ -37,10 +85,10 @@ export function GenesisEmblem() {
             Genesis Emblem & Collection
           </h2>
           <p className="text-white/80 text-lg max-w-3xl mx-auto mb-8" style={{ fontFamily: "'Inter', sans-serif" }}>
-            Each emblem hatches into 3 Caterpi NFTs
+            Each emblem hatches into 2 Caterpi NFTs
           </p>
           <p className="text-[#3BD16F] text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>
-            Collector benefits: Access to content, $CPI integration, marketplace priority
+            Collector benefits: Future collection drop, $CPI integration, marketplace priority
           </p>
         </motion.div>
 
@@ -64,7 +112,7 @@ export function GenesisEmblem() {
                 />
                 <div className="text-center">
                   <h3 className="text-[#FFD86B] mb-1" style={{ fontFamily: "'Inter', sans-serif" }}>
-                    Emblem #{emblem.id}
+                    {emblem.name}
                   </h3>
                   <span 
                     className={`text-xs px-2 py-1 rounded-full bg-gradient-to-r ${getRarityColor(emblem.rarity)} text-white`}
@@ -86,7 +134,7 @@ export function GenesisEmblem() {
         >
           <div className="inline-flex items-center gap-4 bg-gradient-to-r from-[#A44DD8]/20 to-[#3BD16F]/20 backdrop-blur-sm border border-[#FFD86B]/30 rounded-full px-8 py-4">
             <span className="text-[#FFD86B]" style={{ fontFamily: "'Inter', sans-serif" }}>
-              1,000 Genesis Emblems
+              1,500 Genesis Emblems
             </span>
             <span className="text-white">→</span>
             <span className="text-[#3BD16F]" style={{ fontFamily: "'Inter', sans-serif" }}>

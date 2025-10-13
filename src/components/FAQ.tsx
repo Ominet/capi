@@ -16,7 +16,7 @@ export function FAQ() {
   const faqs = [
     {
       question: "What is Caterpi?",
-      answer: "Caterpi is a comprehensive NFT ecosystem featuring 1,000 Genesis Emblems that evolve into 10,000 unique NFTs. It's art, meme coin ($CPI), and a complete digital culture platform spanning Neo Wonderland and the Neo Silk Road marketplace.",
+      answer: "Caterpi is a comprehensive NFT ecosystem featuring 1,500 Genesis Emblems that evolve into 10,000 unique NFTs. It's art, meme coin ($CPI), and a complete digital culture platform spanning Neo Wonderland and the Neo Silk Road marketplace.",
       icon: "🐛",
       color: "#FFD86B"
     },
