@@ -65,14 +65,15 @@ export function GenesisEmblem() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 justify-center flex">
-            <ImageWithFallback
-                    src="/images/8.jpg" alt={`Genesis Emblem 8`}
-                    className="w-full aspect-square object-cover rounded-lg mb-3 w-72 h-72 object-contain"
-                  />
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 justify-center flex ml-40 mr-40">
+            
             <ImageWithFallback
                     src="/images/0.png" alt={`Genesis Emblem 0`}
-                    className="w-full aspect-square object-cover rounded-lg mb-3 w-72 h-72 object-contain"
+                    className="w-full aspect-square object-cover rounded-lg mb-3 w-72 object-contain"
+                  />
+            <ImageWithFallback
+                    src="/images/8.jpg" alt={`Genesis Emblem 8`}
+                    className="w-full aspect-square object-cover rounded-lg mb-3 w-72 object-contain"
                   />
         </div>
           <h2 
